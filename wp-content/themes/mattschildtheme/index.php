@@ -23,20 +23,12 @@
         while (have_posts()) :
             the_post();
     ?>
-            <div class="post-box">
-                <h4><?php the_title() ?></h4>
-                <div class="post-info">
-                    <p><?php the_date() ?></p>
-                    <p>
-                        <?php the_author() ?>
-                    </p>
-                    <div class="post-ex">
-                        <p><?php the_excerpt() ?></p>
-                    </div>
-                </div>
-
-            </div>
-
+            <h4><?php the_title() ?></h4>
+            <p><?php the_date() ?></p>
+            <p>
+                <?php the_author() ?>
+            </p>
+            <p><?php the_excerpt() ?></p>
 
 
     <?php
